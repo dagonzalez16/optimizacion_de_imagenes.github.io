@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="icon" type="image/x-icon" href="./assets/LOGO_ICO.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            background-image: url('./assets/LAPTOP.jpg'); /* Fondo */
+        }
+
+        header {
+            background-color: #3200E6;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="./assets/LOGO.png">
+    <h1>Portal Tecnología</h1>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#laptops">Laptops</a>
+    <a href="#accesorios">Accesorios</a>
+    <a href="#ayuda">Ayuda</a>
+</nav>
+
+<div class="container">
+    <section id="laptops">
+        <h2 class="section-title">Laptops</h2>
+        <div class="inventory-grid">
+            <div class="card">
+                <img src="./assets/DELL.jpg" alt="Laptop Image">
+                <h3>Dell XPS 13</h3>
+                <p>Core i7, 16GB RAM, 512GB SSD</p>
+                <img style="width: 24px; height: 24px;" src="./assets/Add.ico" alt="">
+            </div>
+            <div class="card">
+                <img src="./assets/MAC.jpeg" alt="Laptop Image">
+                <h3>MacBook Pro</h3>
+                <p>M1 Chip, 16GB RAM, 1TB SSD</p>
+                <img style="width: 24px; height: 24px;" src="./assets/Add.ico" alt="">
+            </div>
+            <div class="card">
+                <img src="./assets/LENOVO.jpg" alt="Laptop Image">
+                <h3>Lenovo ThinkPad</h3>
+                <p>Core i5, 8GB RAM, 256GB SSD</p>
+                <img style="width: 24px; height: 24px;" src="./assets/Add.ico" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="accesorios">
+        <h2 class="section-title">Accesorios</h2>
+        <div class="inventory-grid">
+            <div class="card">
+                <img src="./assets/RAZER.jpg" alt="">
+                <h3>Audifonos gamer</h3>
+                <p>Razer</p>
+                <img style="width: 24px; height: 24px;" src="./assets/Add.ico" alt="">
+            </div>
+            <div class="card">
+                <img src="./assets/GAMEFACTOR.jpg" alt="">
+                <h3>Microfono gamer</h3>
+                <p>Gamefactor</p>
+                <img style="width: 24px; height: 24px;" src="./assets/Add.ico" alt="">
+            </div>
+            <div class="card">
+                <img src="./assets/LED.jpg" alt="">
+                <h3>Luces gamer</h3>
+                <p>Genéricas</p>
+                <img style="width: 24px; height: 24px;" src="./assets/Add.ico" alt="">
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Inventory Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
